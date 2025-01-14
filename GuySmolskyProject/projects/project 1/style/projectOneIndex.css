@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.container img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+
+#myForm {
+    width: 30%;
+    height: auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: rgba(26, 26, 26, 0.83);
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 3rem;
+    top: 15vh;
+    right: 10vw;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+#myForm h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+#myForm p {
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+#myForm .form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#myForm input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #D31C75;
+    border-radius: 0.25rem;
+    color: #000;
+}
+
+#myForm button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #D31C75;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#myForm button:hover {
+    background-color: white;
+    color: #D31C75;
+    transform: scale(1.05);
+}
+
+@media (min-width: 344px) and (max-width: 767px) {
+    #myForm {
+        width: 90%;
+        padding: 2rem;
+        top: 10vh;
+        right: 5vw;
+    }
+
+    #myForm h1 {
+        font-size: 1.5rem;
+    }
+
+    #myForm p {
+        font-size: 1rem;
+    }
+
+    #myForm input,
+    #myForm button {
+        font-size: 0.875rem;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    #myForm {
+        width: 80%;
+        padding: 2.5rem;
+        top: 12vh;
+        right: 10vw;
+    }
+
+    #myForm h1 {
+        font-size: 1.75rem;
+    }
+
+    #myForm p {
+        font-size: 1.125rem;
+    }
+
+    #myForm input {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+
+    #myForm button {
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width: 1280px) and (max-width: 1300px) {
+    #myForm {
+        width: 50%;
+        padding: 3rem;
+        top: 15vh;
+        right: 20vw;
+    }
+
+    #myForm h1 {
+        font-size: 2rem;
+    }
+
+    #myForm p {
+        font-size: 1.25rem;
+    }
+
+    #myForm input {
+        width: 80%;
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+
+    #myForm button {
+        width: 50%;
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+}
