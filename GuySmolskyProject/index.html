@@ -4,142 +4,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="description" content="Guy Smolsky - Full Stack Web Developer Portfolio">
+    <meta name="keywords" content="web developer, portfolio, HTML, CSS, full stack developer">
+    <title>Guy Smolsky | Full Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style/indexPageStyle.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- top zone - nav bar with hrefs to each section of the page + logo/photo and student's name. the header is fixed and height no more then 100px-->
+    <!-- Header section with navigation -->
     <header>
         <nav>
             <input type="checkbox" id="hamburger-toggle" class="hamburger-checkbox">
             <label for="hamburger-toggle" class="hamburger">☰</label>
             <div class="sidebar">
-                <a href="#top">Home</a>
-                <a href="#profile-section">About</a>
-                <a href="#gallary">Projects</a>
-                <a href="#myForm">Contact</a>
+                <div class="sidebar-header">
+                    <img src="images/myLogo.png" alt="Guy Smolsky Logo" class="sidebar-logo">
+                </div>
+                <div class="sidebar-links">
+                    <a href="#top"><i class="fas fa-home"></i> Home</a>
+                    <a href="#profile-section"><i class="fas fa-user"></i> About</a>
+                    <a href="#projects"><i class="fas fa-code"></i> Projects</a>
+                    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+                </div>
             </div>
-            <ul>
+            <div class="logo-container">
+                <img src="images/myLogo.png" alt="Guy Smolsky Logo">
+                <a href="index.html" class="name">Guy Smolsky</a>
+            </div>
+            <ul class="nav-links">
                 <li><a href="#top">Home</a></li>
                 <li><a href="#profile-section">About</a></li>
-                <li><a href="#gallary">Projects</a></li>
-                <li><a href="#myForm">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <img src="images/myLogo.png" alt="mylogo">
-            <a href="index.html" class="name"><span class="name">Guy Smolsky</span></a>
         </nav>
     </header>
 
-
-    <!-- opening zone - welcoming of the page, must have h1 and paragraph. need to have a general image, adding a sentence of interest is suggested -->
-    <section class="opening">
-        <h1>Portfolio Page</h1>
-        <p>Welcome to my portfolio page. In this page i will demonstrate my skills and abilities in coding. <br> I will
-            showcase my projects and languages i used to create them.
-            <br>
-            <span>I'm a full-stack developer: I build the frontend you fall in love with, the backend
-                you never see, and debug
-                the code
-                that secretly plots against me!</span>
-        </p>
+    <!-- Hero section -->
+    <section class="hero" id="top">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Guy Smolsky</span></h1>
+            <h2>Full Stack Web Developer</h2>
+            <p>I build responsive, user-friendly web applications with clean and efficient code.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
     </section>
 
-    <div class="coding-languages" id="coding-languages">
-        <img src="images/htmlIcon.png" alt="html icon" class="htmlicon">
-        <img src="images/cssicon.png" alt="CSS icon" class="cssicon">
-    </div>
-    <div id="profile-section">
-        <div class="profile-left">
-            <img src="images/myphoto.jpeg" alt="Profile Image" class="profile-image">
-            <a href="myCV.pdf" download="myCV.pdf" class="download-cv" target="_blank"
-                rel="noopener noreferrer">Download My CV</a>
+    <!-- Skills section -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="images/htmlIcon.png" alt="HTML5" class="skill-icon">
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="images/cssicon.png" alt="CSS3" class="skill-icon">
+                    <h3>CSS3</h3>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
         </div>
-        <div class="profile-right">
-            <p>
-                Hi, I'm a full-stack developer passionate about building user-friendly applications and solving
-                real-world
-                problems. With expertise in both frontend and backend development, I bring ideas to life.
-            </p>
-        </div>
-    </div>
+    </section>
 
-    <!-- gallary zone - will have my personal portfolio project which hrefs to each project. for each project a representitive photo must be added and give a description for it. for each project the language that was used to create it will be written. when clicking on each project we will go via href to the project page. -->
-    <main id="gallary" class="gallary">
-        <div class="item item1">
-            <img src="images/projectOnePhoto.png" alt=" first project">
-            <a href="./landingPageone.html" class="button">View Project</a>
-            <div class="description">This is the first project.</div>
+    <!-- About section -->
+    <section id="profile-section" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <div class="profile-left">
+                    <img src="images/myphoto.jpeg" alt="Guy Smolsky" class="profile-image">
+                    <a href="myCV.pdf" download="GuySmolsky_CV.pdf" class="download-cv">
+                        <i class="fas fa-download"></i> Download My CV
+                    </a>
+                </div>
+                <div class="profile-right">
+                    <h3>Who I Am</h3>
+                    <p>
+                        I'm a passionate full-stack developer focused on building user-friendly applications and solving
+                        real-world problems. With expertise in both frontend and backend development, I bring ideas to
+                        life
+                        through clean, efficient, and maintainable code.
+                    </p>
+                    <p>
+                        My approach combines technical excellence with creative problem-solving to deliver high-quality
+                        digital
+                        experiences that meet both user needs and business goals.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="item item2">
-            <img src="images/projectTwoPhoto.png" alt="second project">
-            <a href="./landingPagetwo.html" class="button">View Project</a>
-            <div class="description">This is the second project.</div>
-        </div>
-        <div class="item item3">
-            <img src="images/projectThreePhoto.png" alt="third project">
-            <a href="./landingPageThree.html" class="button">View Project</a>
-            <div class="description">This is the third project.</div>
-        </div>
-        <div class="item item4">
-            <img src="images/projectFourPhoto.png" alt="fourth project">
-            <a href="./landinPageFour.html" class="button">View Project</a>
-            <div class="description">This is the fourth project.</div>
-        </div>
-        <div class="item item5">
-            <img src="./images/projectFivePhoto.png" alt="fifth project">
-            <a href="./landingPageFive.html" class="button">View Project</a>
-            <div class="description">This is the fifth project.</div>
-        </div>
-        <div class="item item6">
-            <img src="./images/projectSixPhoto.png" alt="sixth project">
-            <a href="./landinPageSix.html" class="button">View Project</a>
-            <div class="description">This is the sixth project.</div>
-        </div>
-    </main>
-    <!-- contact me zone - will have a joining form with fullname, phone number and email. -->
-    <form id="myForm">
-        <div class="form-field">
-            <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" required pattern="[A-Za-z\s]{3,}"
-                title="Full name must contain only letters and spaces, and be at least 3 characters long.">
-        </div>
+    </section>
 
-        <div class="form-field">
-            <label for="telephone">Telephone Number:</label>
-            <input type="tel" id="telephone" name="telephone" required
-                pattern="(050|051|052|053|054|055|056|058|059)\d{7}"
-                title="Telephone number must start with 050, 051, 052, 053, 054, 055, 056, 058, or 059 and have a total of 10 digits.">
+    <!-- Projects section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projectOnePhoto.png" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project One</h3>
+                        <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="./landingPageone.html" class="btn btn-project">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projectTwoPhoto.png" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Two</h3>
+                        <p>An interactive web application with dynamic content loading.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="./landingPagetwo.html" class="btn btn-project">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projectThreePhoto.png" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Three</h3>
+                        <p>A clean and modern user interface with advanced features.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="./landingPageThree.html" class="btn btn-project">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projectFourPhoto.png" alt="Project 4">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Four</h3>
+                        <p>A responsive e-commerce layout with smooth animations.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="./landinPageFour.html" class="btn btn-project">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/projectFivePhoto.png" alt="Project 5">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Five</h3>
+                        <p>A portfolio site with custom animations and transitions.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="./landingPageFive.html" class="btn btn-project">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/projectSixPhoto.png" alt="Project 6">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Six</h3>
+                        <p>A dashboard interface with interactive elements.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="./landinPageSix.html" class="btn btn-project">View Project</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="form-field">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required title="Please enter a valid email address.">
+    <!-- Contact section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form id="myForm" class="contact-form">
+                <div class="form-field">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required pattern="[A-Za-z\s]{3,}"
+                        title="Full name must contain only letters and spaces, and be at least 3 characters long.">
+                </div>
+
+                <div class="form-field">
+                    <label for="telephone">Phone Number</label>
+                    <input type="tel" id="telephone" name="telephone" required
+                        pattern="(050|051|052|053|054|055|056|058|059)\d{7}"
+                        title="Phone number must start with 050, 051, 052, 053, 054, 055, 056, 058, or 059 and have a total of 10 digits.">
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required title="Please enter a valid email address.">
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-submit">Send Message</button>
+            </form>
         </div>
-        <button type="submit">Submit</button>
-    </form>
+    </section>
 
-    <!-- bottom zone - will have the credit for the site creator -->
+    <!-- Footer -->
     <footer>
-        <div class="links">
-            <div><a href="https://www.facebook.com/guy.smolsky.5" target="_blank" rel="noopener noreferrer"><img
-                        src="./projects/project 6/images/facebookIcon.svg" alt="facebook icon" target="_blank"
-                        rel="noopener noreferrer"></a></div>
-            <div><a href="https://maps.app.goo.gl/5BfokcP8Yd8vevox6" target="_blank" rel="noopener noreferrer"><img
-                        src="./images/houseIcon.svg" alt="house icon"></a></div>
-            <div><a href="tel:+9720524487940"><img src="./projects/project 6/images/telephoneIcon.svg"
-                        alt="telephone icon"></a></div>
-            <div><a href="https://www.linkedin.com/in/guy-smolsky-550445341/" target="_blank"
-                    rel="noopener noreferrer"><img src="./projects/project 6/images/linkedinIcon.svg"
-                        alt="linkedin icon"></a></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Guy Smolsky</h3>
+                    <p>Full Stack Web Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.facebook.com/guy.smolsky.5" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://maps.app.goo.gl/5BfokcP8Yd8vevox6" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                    <a href="tel:+9720524487940">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/guy-smolsky-550445341/" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Guy Smolsky. All rights reserved.</p>
+            </div>
         </div>
-        <span>&copy; all rights to Guy Smolsky</span>
     </footer>
 </body>
 

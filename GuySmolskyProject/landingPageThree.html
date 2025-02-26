@@ -4,48 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Number 3</title>
-    <link rel="stylesheet" href="./style/landingPagesStyle.css">
+    <meta name="description" content="Project Number 3 - Web development project by Guy Smolsky">
+    <title>Project Number 3 | Guy Smolsky</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/landingPagesStyle.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <img src="images/myLogo.png" alt="mylogo">
-            <a href="index.html" class="name"><span class="name">Guy Smolsky</span></a>
+            <div class="nav-left">
+                <a href="index.html" class="logo-link">
+                    <img src="images/myLogo.png" alt="Guy Smolsky Logo">
+                    <span class="name">Guy Smolsky</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="index.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i> Back to Portfolio
+                </a>
+            </div>
         </nav>
     </header>
-    <section class="opening">
-        <h1>Project Number 3</h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt itaque alias unde eveniet. Soluta dicta eaque
-            adipisci delectus. Velit debitis magnam minima rerum magni sapiente? Numquam non saepe earum porro!
-        </p>
-        <div class="download-links">
-            <a href="./projects/project 3/index.html" target="_blank" rel="noopener noreferrer">Go To Project</a>
-            <a href="./projects/project 3.zip" download="./projects/project 3.zip">Download Project</a>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Project Three</h1>
+                <p class="project-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt itaque alias unde eveniet. Soluta
+                    dicta eaque
+                    adipisci delectus. Velit debitis magnam minima rerum magni sapiente? Numquam non saepe earum porro!
+                </p>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <img src="images/htmlIcon.png" alt="HTML5">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="images/cssicon.png" alt="CSS3">
+                        <span>CSS3</span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <a href="./projects/project 3/index.html" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary">
+                        <i class="fas fa-eye"></i> View Project
+                    </a>
+                    <a href="./projects/project 3.zip" download="project1.zip" class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Download Source
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shape"></div>
+    </section>
+
+    <section class="project-showcase">
+        <div class="container">
+            <h2>Project Preview</h2>
+            <div class="showcase-wrapper">
+                <div class="device-mockup">
+                    <div class="device-frame">
+                        <img src="./images/projectThreePhoto.png" alt="Project Screenshot" class="project-image">
+                    </div>
+                </div>
+                <div class="project-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Responsive Design</h3>
+                        <p>Fully optimized for all device sizes</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h3>Fast Loading</h3>
+                        <p>Optimized for performance</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-code"></i>
+                        <h3>Clean Code</h3>
+                        <p>Well-structured HTML/CSS</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <div class="coding-languages" id="coding-languages">
-        <img src="images/htmlIcon.png" alt="html icon" class="htmlicon">
-        <img src="images/cssicon.png" alt="CSS icon" class="cssicon">
-    </div>
-    <main class="projectphoto"><img src="./images/projectThreePhoto.png" alt="Project Photo"></main>
+
     <footer>
-        <div class="links">
-            <div><a href="https://www.facebook.com/guy.smolsky.5" target="_blank" rel="noopener noreferrer"><img
-                        src="./projects/project 6/images/facebookIcon.svg" alt="facebook icon" target="_blank"
-                        rel="noopener noreferrer"></a></div>
-            <div><a href="https://maps.app.goo.gl/5BfokcP8Yd8vevox6" target="_blank" rel="noopener noreferrer"><img
-                        src="./images/houseIcon.svg" alt="house icon"></a></div>
-            <div><a href="tel:+9720524487940"><img src="./projects/project 6/images/telephoneIcon.svg"
-                        alt="telephone icon"></a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Guy Smolsky</h3>
+                    <p>Web Developer</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/guy.smolsky.5" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://maps.app.goo.gl/5BfokcP8Yd8vevox6" target="_blank" rel="noopener noreferrer"
+                        aria-label="Location">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                    <a href="tel:+9720524487940" aria-label="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/guy-smolsky-550445341/" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
             </div>
-            <div><a href="https://www.linkedin.com/in/guy-smolsky-550445341/" target="_blank"
-                    rel="noopener noreferrer"><img src="./projects/project 6/images/linkedinIcon.svg"
-                        alt="linkedin icon"></a></div>
+            <div class="copyright">
+                <p>&copy; 2025 Guy Smolsky. All rights reserved.</p>
+            </div>
         </div>
-        &copy; all rights to Guy Smolsky
     </footer>
 </body>
 
